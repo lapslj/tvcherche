@@ -92,7 +92,7 @@ $searchForm.on("submit", async function (evt) {
 
 async function getEpisodesOfShow(id) { 
   let epArray = []
-  let response = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`);
+  let response = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`);
   console.log(response.data)
   for (let show of response.data){
     let zEp = {}
