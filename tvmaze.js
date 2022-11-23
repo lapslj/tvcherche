@@ -14,7 +14,7 @@ const $searchForm = $("#searchForm");
 
 async function getShowsByTerm(term) {
   let tvArray = []
-  let response = await axios.get("http://api.tvmaze.com/search/shows?",{
+  let response = await axios.get("https://api.tvmaze.com/search/shows?",{
     params: {
       q: term
     }
